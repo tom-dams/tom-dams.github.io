@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # hurock
 A classic sidebar Hugo theme
 
@@ -70,6 +69,3 @@ title = "Your site title"
 
 * You can change the `highlight.js` theme, see `highlight_theme` parameter, but you'll have to add the corresponding css in your `static/highlight/` folder.
 * `notoc` means no TableOfContents. It is used to hide the table of contents. Indeed, in case you're using the permalinks parameter, the table of contents links are not working with current Hugo version (0.13).
-=======
-# GIP
->>>>>>> 0688fab9ce995f5003daab8c3b426cf1c4aa947c

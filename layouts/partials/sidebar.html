@@ -1,0 +1,59 @@
+<div id="sidebar">
+<div class="sidebar">
+  <div class="sidebar-about">
+    <a href="{{ .Site.BaseURL }}">
+      <img class=user src="media/tomdams.png" title="{{ .Site.Author.name }}" alt="Me" />
+      <h4 class="sidebar-title">{{ .Site.Title }}</h4>
+    </a>
+    <span class="sidebar-tagline">{{ with .Site.Params.Description }} {{ . | safeHTML}} {{end}}</span>
+  </div>
+  <nav class="sidebar-nav">
+    <ul class="sidebar-nav-list">
+      <li class="sidebar-nav-item nav-home">
+        <span class="genericon genericon-home"></span><a class="sidebar-link" href="{{.Site.BaseURL}}">Home</a>
+      </li>
+
+      <li class="sidebar-nav-item">
+        <a>Posts</a>
+		
+      </li>
+	   <section>
+  <ul>
+    {{ range $taxonomyname, $taxonomy := .Site.Taxonomies }}
+     
+        <ul>
+          {{ range $key, $value := $taxonomy }}
+          <li class=sidebar-text> {{ $key }} </li>
+                <ul >
+                {{ range $value.Pages }}
+                    <li hugo-nav="{{ .RelPermalink}}"><a  class=sidebar-text href="{{ .Permalink}}"> {{ .LinkTitle }} </a> </li>
+                {{ end }}
+                </ul>
+          {{ end }}
+        </ul>
+      </li>
+    {{ end }}
+  </ul>
+</section>
+      <li class="sidebar-nav-item">
+        <a>Links</a>
+				<ul>
+		<li>
+		<a href="https://gitlab.com/tom-dams/GIP">Gitlab<a>
+		<a href="https://github.com/tom-dams/tom-dams.github.io">Github<a>
+		<a href="http://tom-dams.github.io">Github Pages<a>
+		</li>
+      </li>
+ 	     </ul>
+      </li>
+ 	     </ul>
+  </nav>
+ 
+  
+  </div>
+  <hr />
+  <div class="sidebar-bottom">
+   
+  </div>
+</div>
+</div>
