@@ -1,8 +1,7 @@
 +++
 date = "2015-12-06T20:23:14+01:00"
-draft = true
-title = "Software"
-
+title = "Workflow"
+categories =["Software"]
 +++
 
 Het verschil tussen Wordpress en Hugo geven is niet gemakkelijk sinds dat ik nog nooit met Wordpress gewerkt heb,
