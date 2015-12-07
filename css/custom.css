@@ -94,21 +94,18 @@ padding-left: 10px;
 }
 .sidebar-nav-item.nav-home {
 margin-bottom: 40px;
+font-size 30px
 }
 .sidebar-nav-item.nav-home .genericon-home,
 .sidebar-nav-item.nav-home a {
 color: #1EAEDB;
 }
 .sidebar-text{
-	color: #b5bd68;
-	font-size: 15px;
-}
-.sidebar-categorie{
-font-size : 20px;
+	color: #b5bd68
 }
 .sidebar-nav-item .genericon {
 color: #DE935F;
-font-size: 22px;
+font-size: 30px;
 margin-top: 4px;
 margin-right: 10px;
 transition: all 0.5s ease;

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>It Tapa on GIP Tom Dams</title>
+    <link>http://tom-dams.github.io/categories/it-tapa/</link>
+    <description>Recent content in It Tapa on GIP Tom Dams</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 06 Dec 2015 20:31:14 +0100</lastBuildDate>
+    <atom:link href="http://tom-dams.github.io/categories/it-tapa/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>IT-Tapa middagsessie</title>
+      <link>http://tom-dams.github.io/GIP/middagsessie/</link>
+      <pubDate>Sun, 06 Dec 2015 20:31:14 +0100</pubDate>
+      
+      <guid>http://tom-dams.github.io/GIP/middagsessie/</guid>
+      <description>&lt;p&gt;Onze IT-Tapa ging over een Plickers. Plickers is een online tool waarmee je kan quizzen met behulp van QR-codes. Op de vier zijden van de QR-code staat A, B, C, of D. Om te antwoorden draai je je QR-code zodat de kant met de letter dat je wilt antwoorden naar boven gericht is. Dan moet één iemand met een tablet de QR-codes inscannen om de antwoorden te krijgen.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://www.plickers.com&#34;&gt;De site van plickers&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://wout-segers.github.io/&#34;&gt;De site van mijn medeleerling&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Dit is het instructie filmpje van Plickers in het nederlands&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://www.youtube.com/watch?feature=player_embedded&amp;v=_7OVpWjr8lE
+&#34; target=&#34;_blank&#34;&gt;&lt;img src=&#34;http://img.youtube.com/vi/_7OVpWjr8lE/0.jpg&#34; 
+alt=&#34;IMAGE ALT TEXT HERE&#34; width=&#34;240&#34; height=&#34;180&#34; border=&#34;10&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>
