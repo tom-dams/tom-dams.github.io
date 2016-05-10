@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Stage on GIP Tom Dams</title>
+    <link>http://tom-dams.github.io/categories/stage/</link>
+    <description>Recent content in Stage on GIP Tom Dams</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 10 May 2016 20:07:54 +0200</lastBuildDate>
+    <atom:link href="http://tom-dams.github.io/categories/stage/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Stageverslagen</title>
+      <link>http://tom-dams.github.io/GIP/StageVerslagen/</link>
+      <pubDate>Tue, 10 May 2016 20:07:54 +0200</pubDate>
+      
+      <guid>http://tom-dams.github.io/GIP/StageVerslagen/</guid>
+      <description>&lt;p&gt;Dag 1: Eerst kreeg ik een kleine rondleiding. Daarna gingen we rond naar alle vergaderzalen en presentatiezalen om te kijken wat er miste en of alles werkte. Daarna heb ik nog enkele nieuwe laptops geboot via “Network Booting” of “PXE”.&lt;/p&gt;
+
+&lt;p&gt;Dag 2: In het begin van de dag heb ik nog wat nieuwe laptops geboot via &amp;ldquo;PXE&amp;rdquo;. Later heb ik 8 servers die ze niet meer gebruiken losgekoppeld en klaargemaakt voor verkoop.&lt;/p&gt;
+
+&lt;p&gt;Dag 3: De 8 servers aangesloten en nagekeken op ram, aangevuld waar nodig en klaargezet voor verkoop en nog nieuwe laptops klaargemaakt voor personeel.&lt;/p&gt;
+
+&lt;p&gt;Dag 4: Met System Center 2012 Configuration Manager een nieuwe task sequence aangemaakt en getest zodat de nieuwe laptops voor de Meeting Rooms gemakkelijk uitgerold kunnen worden. Ook aanpassingen gemaakt in de group policies.&lt;/p&gt;
+
+&lt;p&gt;Dag 5: Verder gewerkt met System Center 2012 Configuration Manager aan de task sequences en in active directory group policies aangemaakt en aangepast. Ook nog twee defecte voedingen vervangen.&lt;/p&gt;
+
+&lt;p&gt;Dag 6: Task sequences zitten aan te passen naargelang wat ze moeten kunnen doen en ze getest.&lt;/p&gt;
+
+&lt;p&gt;Dag 7: Nog aanpassingen gemaakt aan de task sequence in System Center. Een deel van de laptops uit de vergaderkamers gehaald en uitgerold via deze task sequence en in een andere OU in de active directory gezet en terug geïnstaleerd in de vergaderkamers.&lt;/p&gt;
+
+&lt;p&gt;Dag 8 : Nieuwe laptops vervangen door oude laptops en deze opnieuw uitgerold en nog aanpassingen gemaakt in de task sequence. Ook een defecte pc vervangen van een werknemer.&lt;/p&gt;
+
+&lt;p&gt;Dag 9 : Alle kabels die niet geconfigureerd waren op een switch er uit gehaald en klaargemaakt om de rest die wel geconfigureerd waren over te zetten.&lt;/p&gt;
+
+&lt;p&gt;Dag 10 : Ervoor gezorgd dat in alle vergaderzalen waar er smartboards hangen deze te laten werken op de hiervoor uitgerolde laptops&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Huisstijl</title>
+      <link>http://tom-dams.github.io/GIP/huisstijl/</link>
+      <pubDate>Tue, 10 May 2016 20:07:24 +0200</pubDate>
+      
+      <guid>http://tom-dams.github.io/GIP/huisstijl/</guid>
+      <description>
+
+&lt;h1 id=&#34;taak-16-huisstijl:e2d1e8b2c3f026f63366bcfa3bb15b30&#34;&gt;Taak 16 – Huisstijl&lt;/h1&gt;
+
+&lt;p&gt;&lt;img src=&#34;GIP/etap.png&#34; alt=&#34;&#34; /&gt;
+&lt;/p&gt;
+
+&lt;p&gt;Dit is het logo van etap.&lt;/p&gt;
+
+&lt;p&gt;Het logo wordt gebruikt voor verschillende dingen. Zoals op hun visitekaartjes, op hun facturen, aan de ingang, enzovoort.&lt;/p&gt;
+
+&lt;p&gt;Ze gebruiken het logo niet in hun mails maar ze hebben een template waar alle informatie instaat onderaan in de mail.
+Dit is een voorbeeld van mijn stagementor Paul Vandenbril:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;GIP/huisstijl.png&#34; alt=&#34;&#34; /&gt;
+&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

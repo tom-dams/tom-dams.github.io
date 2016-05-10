@@ -6,15 +6,189 @@
     <description>Recent content on GIP Tom Dams</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 06 Dec 2015 21:45:03 +0100</lastBuildDate>
+    <lastBuildDate>Tue, 10 May 2016 20:07:54 +0200</lastBuildDate>
     <atom:link href="http://tom-dams.github.io/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
+      <title>Stageverslagen</title>
+      <link>http://tom-dams.github.io/GIP/StageVerslagen/</link>
+      <pubDate>Tue, 10 May 2016 20:07:54 +0200</pubDate>
+      
+      <guid>http://tom-dams.github.io/GIP/StageVerslagen/</guid>
+      <description>&lt;p&gt;Dag 1: Eerst kreeg ik een kleine rondleiding. Daarna gingen we rond naar alle vergaderzalen en presentatiezalen om te kijken wat er miste en of alles werkte. Daarna heb ik nog enkele nieuwe laptops geboot via “Network Booting” of “PXE”.&lt;/p&gt;
+
+&lt;p&gt;Dag 2: In het begin van de dag heb ik nog wat nieuwe laptops geboot via &amp;ldquo;PXE&amp;rdquo;. Later heb ik 8 servers die ze niet meer gebruiken losgekoppeld en klaargemaakt voor verkoop.&lt;/p&gt;
+
+&lt;p&gt;Dag 3: De 8 servers aangesloten en nagekeken op ram, aangevuld waar nodig en klaargezet voor verkoop en nog nieuwe laptops klaargemaakt voor personeel.&lt;/p&gt;
+
+&lt;p&gt;Dag 4: Met System Center 2012 Configuration Manager een nieuwe task sequence aangemaakt en getest zodat de nieuwe laptops voor de Meeting Rooms gemakkelijk uitgerold kunnen worden. Ook aanpassingen gemaakt in de group policies.&lt;/p&gt;
+
+&lt;p&gt;Dag 5: Verder gewerkt met System Center 2012 Configuration Manager aan de task sequences en in active directory group policies aangemaakt en aangepast. Ook nog twee defecte voedingen vervangen.&lt;/p&gt;
+
+&lt;p&gt;Dag 6: Task sequences zitten aan te passen naargelang wat ze moeten kunnen doen en ze getest.&lt;/p&gt;
+
+&lt;p&gt;Dag 7: Nog aanpassingen gemaakt aan de task sequence in System Center. Een deel van de laptops uit de vergaderkamers gehaald en uitgerold via deze task sequence en in een andere OU in de active directory gezet en terug geïnstaleerd in de vergaderkamers.&lt;/p&gt;
+
+&lt;p&gt;Dag 8 : Nieuwe laptops vervangen door oude laptops en deze opnieuw uitgerold en nog aanpassingen gemaakt in de task sequence. Ook een defecte pc vervangen van een werknemer.&lt;/p&gt;
+
+&lt;p&gt;Dag 9 : Alle kabels die niet geconfigureerd waren op een switch er uit gehaald en klaargemaakt om de rest die wel geconfigureerd waren over te zetten.&lt;/p&gt;
+
+&lt;p&gt;Dag 10 : Ervoor gezorgd dat in alle vergaderzalen waar er smartboards hangen deze te laten werken op de hiervoor uitgerolde laptops&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Huisstijl</title>
+      <link>http://tom-dams.github.io/GIP/huisstijl/</link>
+      <pubDate>Tue, 10 May 2016 20:07:24 +0200</pubDate>
+      
+      <guid>http://tom-dams.github.io/GIP/huisstijl/</guid>
+      <description>
+
+&lt;h1 id=&#34;taak-16-huisstijl:e2d1e8b2c3f026f63366bcfa3bb15b30&#34;&gt;Taak 16 – Huisstijl&lt;/h1&gt;
+
+&lt;p&gt;&lt;img src=&#34;GIP/etap.png&#34; alt=&#34;&#34; /&gt;
+&lt;/p&gt;
+
+&lt;p&gt;Dit is het logo van etap.&lt;/p&gt;
+
+&lt;p&gt;Het logo wordt gebruikt voor verschillende dingen. Zoals op hun visitekaartjes, op hun facturen, aan de ingang, enzovoort.&lt;/p&gt;
+
+&lt;p&gt;Ze gebruiken het logo niet in hun mails maar ze hebben een template waar alle informatie instaat onderaan in de mail.
+Dit is een voorbeeld van mijn stagementor Paul Vandenbril:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;GIP/huisstijl.png&#34; alt=&#34;&#34; /&gt;
+&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Database Mail</title>
+      <link>http://tom-dams.github.io/GIP/database/</link>
+      <pubDate>Sun, 08 May 2016 16:45:21 +0200</pubDate>
+      
+      <guid>http://tom-dams.github.io/GIP/database/</guid>
+      <description>&lt;pre&gt;&lt;code&gt;create schema gip_taak_08_DamsTom;
+use gip_taak_08_DamsTom;
+
+create table UserAccount(
+    id int not null auto_increment primary key,
+    wachtwoord text not null,
+    email text not null 
+);
+
+create table Mail(
+    id int not null auto_increment primary key,
+    user_id int not null,
+    tijdstip datetime,
+    titel text not null,
+    inhoud text not null,
+    bijlage text,
+    ontvanger text not null 
+);
+
+insert into UserAccount(id, wachtwoord, email)
+values
+(1, &amp;quot;Test123&amp;quot;, &amp;quot;test@gmail.com&amp;quot;),
+(2, &amp;quot;Test456&amp;quot;, &amp;quot;test2@gmail.com&amp;quot;);
+
+insert into Mail(mail_id, user_id, tijdstip, titel, inhoud, bijlage, ontvanger)
+values
+(1,1, SYSDATE(), &amp;quot;Titel&amp;quot;, &amp;quot;Dit is de inhoud&amp;quot;, &amp;quot;Bijlage&amp;quot;, &amp;quot;test2@gmail.com&amp;quot;),
+(2, 2, sysdate(), &amp;quot;Titel2&amp;quot;, &amp;quot;Hoi&amp;quot;, &amp;quot;&amp;quot;, &amp;quot;test@gmail.com&amp;quot;); 
+
+select * from UserAccount join Mail on UserAccount.id = Mail.user_id;
+
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;&lt;img src=&#34;GIP/DiagramMailGip.png&#34; alt=&#34;&#34; /&gt;
+&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Review of a software tool in the training company: Etap</title>
+      <link>http://tom-dams.github.io/GIP/CaseStudyEngels/</link>
+      <pubDate>Sun, 08 May 2016 15:59:04 +0200</pubDate>
+      
+      <guid>http://tom-dams.github.io/GIP/CaseStudyEngels/</guid>
+      <description>&lt;p&gt;This review is going to be about the tool System Center Configuration Manager.
+System Center Configuration Manager is mostly used for companies which are not small enough to keep track of every PC with a spreadsheet anymore.
+With System Center Configuration Manager you can put these PCs in groups to identify the PCs.
+You can also linkTask Sequences to each group which makes it easier and quicker to boot PCs.
+In these task sequences you can choose what Operating System, which drivers, what software and much more you want.
+Like this you only have to choose this once and you can boot multiple PCs the same way with just one press on a button.
+When you do this all the PCs will have the same software, OS … and each PC will be able to do just the same as all the other PCs in that group. This was used a lot at Etap where I did my internship. For instance I made a Task Sequence for all their laptops that had to go in the meeting rooms. These laptops had to do the exact same thing so I just had to boot them all with that Task Sequence and they were all done.  You can also bind one Task Sequence to multiple groups.&lt;/p&gt;
+
+&lt;p&gt;First of all the product is really useful for companies that are growing in terms of employees.
+The review does a pretty good job of showing this by giving us some examples of how it could go down in a real company.
+It’s useful for organizing every device and easy to keep up with new employees.
+You can easily put a new device in a group when a new employee needs to be added.
+If you already used an older version of this tool, you’re in luck because you can easily import the data from one version to the other.
+However, if you didn’t, it’s going to take you some time to set everything up.
+If this is the case I’d still highly recommend doing this since it’s going to save you some time afterwards.
+It’s an investment of time. You’re going to lose a lot of time when you start with it but it’s going to save you way more time afterwards.&lt;/p&gt;
+
+&lt;p&gt;I really like this tool.
+I’d really recommend it to every company that’s struggling with keeping up with the administration of their PCs.
+At first sight it looks pretty complicated but once you look into it for a while it is actually pretty easy to understand and it’s going to save you a lot of time.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Reportage photo concernant le stage</title>
+      <link>http://tom-dams.github.io/GIP/PhotosStage/</link>
+      <pubDate>Sun, 08 May 2016 15:45:22 +0200</pubDate>
+      
+      <guid>http://tom-dams.github.io/GIP/PhotosStage/</guid>
+      <description>&lt;p&gt;Voice ma presentation avec des photos de mon stage:&lt;/p&gt;
+
+&lt;div style=&#34;width: 100%;&#34;&gt;
+ &lt;div style=&#34;position: relative; padding-bottom: 56.25%; padding-top: 0; height: 0;&#34;&gt;
+ &lt;iframe frameborder=&#34;0&#34; width=&#34;1200&#34; height=&#34;675&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%;&#34; src=&#34;http://www.genial.ly/View/Index/56cb58241561e8040812684c&#34; type=&#34;text/html&#34; allowscriptaccess=&#34;always&#34; allowfullscreen=&#34;true&#34; scrolling=&#34;no&#34; allownetworking=&#34;all&#34;&gt;&lt;/iframe&gt;
+ &lt;/div&gt;
+ &lt;/div&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Case Study</title>
+      <link>http://tom-dams.github.io/GIP/Case_Study/</link>
+      <pubDate>Sun, 08 May 2016 14:12:42 +0200</pubDate>
+      
+      <guid>http://tom-dams.github.io/GIP/Case_Study/</guid>
+      <description>&lt;p&gt;Mijn onderwerp voor de case study was System Center Configuration Manager.
+Het is een redelijk bekend product en het wordt in veel ondernemingen gebruikt en bijvoorbeeld ook in onze school.&lt;/p&gt;
+
+&lt;p&gt;In het begin toen ik System Center Configuration Manager voor het eerst zag op mijn stagebedrijf dacht ik dat het heel moeilijk ging zijn, maar uiteindelijk na wat uitleg kon ik mijn weg er in terug vinden en was het toch niet zo moeilijk als verwacht.&lt;/p&gt;
+
+&lt;p&gt;Ik heb met System Center Configuration Manager veel task sequences moeten maken. Hieronder ziet u zo een task sequence.
+Deze worden gebruikt om ervoor te zorgen dat alle software en drivers op nieuwe computers komen te staan.
+Op mijn stagebedrijf heb ik zelf mijn task sequences moeten maken en hiermee nieuwe laptops die waren aangekomen klaar voor gebruik gemaakt.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;GIP/taskSequence.png&#34; alt=&#34;&#34; /&gt;
+&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Instructiefilmpje nederlands</title>
+      <link>http://tom-dams.github.io/GIP/InstructiefilmpjeNED/</link>
+      <pubDate>Sun, 06 Dec 2015 22:23:50 +0100</pubDate>
+      
+      <guid>http://tom-dams.github.io/GIP/InstructiefilmpjeNED/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;http://www.youtube.com/watch?feature=player_embedded&amp;v=_7OVpWjr8lE
+&#34; target=&#34;_blank&#34;&gt;&lt;img src=&#34;http://img.youtube.com/vi/_7OVpWjr8lE/0.jpg&#34; 
+alt=&#34;IMAGE ALT TEXT HERE&#34; width=&#34;240&#34; height=&#34;180&#34; border=&#34;10&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
       <title>Instructiefilmpje engels</title>
-      <link>http://tom-dams.github.io/gip/InstructiefilmpjeENG/</link>
+      <link>http://tom-dams.github.io/GIP/InstructiefilmpjeENG/</link>
       <pubDate>Sun, 06 Dec 2015 21:45:03 +0100</pubDate>
       
-      <guid>http://tom-dams.github.io/gip/InstructiefilmpjeENG/</guid>
+      <guid>http://tom-dams.github.io/GIP/InstructiefilmpjeENG/</guid>
       <description>&lt;p&gt;&lt;a href=&#34;http://www.youtube.com/watch?feature=player_embedded&amp;v=kyP6U8SHb90
 &#34; target=&#34;_blank&#34;&gt;&lt;img src=&#34;http://img.youtube.com/vi/kyP6U8SHb90/0.jpg&#34; 
 alt=&#34;IMAGE ALT TEXT HERE&#34; width=&#34;240&#34; height=&#34;180&#34; border=&#34;10&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
@@ -23,10 +197,10 @@ alt=&#34;IMAGE ALT TEXT HERE&#34; width=&#34;240&#34; height=&#34;180&#34; borde
     
     <item>
       <title>FAQ</title>
-      <link>http://tom-dams.github.io/gip/FAQ/</link>
+      <link>http://tom-dams.github.io/GIP/FAQ/</link>
       <pubDate>Sun, 06 Dec 2015 21:31:05 +0100</pubDate>
       
-      <guid>http://tom-dams.github.io/gip/FAQ/</guid>
+      <guid>http://tom-dams.github.io/GIP/FAQ/</guid>
       <description>
 
 &lt;h1 id=&#34;voici-des-questions-demandées-fréquemment-sur-plickers:e6f81a9d8df4fb4d787121a242ea6bf1&#34;&gt;Voici des questions demandées fréquemment sur Plickers&lt;/h1&gt;
@@ -56,31 +230,11 @@ différentes&lt;/p&gt;
     </item>
     
     <item>
-      <title>IT-Tapa middagsessie</title>
-      <link>http://tom-dams.github.io/gip/middagsessie/</link>
-      <pubDate>Sun, 06 Dec 2015 20:31:14 +0100</pubDate>
-      
-      <guid>http://tom-dams.github.io/gip/middagsessie/</guid>
-      <description>&lt;p&gt;Onze IT-Tapa ging over een Plickers. Plickers is een online tool waarmee je kan quizzen met behulp van QR-codes. Op de vier zijden van de QR-code staat A, B, C, of D. Om te antwoorden draai je je QR-code zodat de kant met de letter dat je wilt antwoorden naar boven gericht is. Dan moet één iemand met een tablet de QR-codes inscannen om de antwoorden te krijgen.&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;https://www.plickers.com&#34;&gt;De site van plickers&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;http://wout-segers.github.io/&#34;&gt;De site van mijn medeleerling&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;Dit is het instructie filmpje van Plickers in het nederlands&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;http://www.youtube.com/watch?feature=player_embedded&amp;v=_7OVpWjr8lE
-&#34; target=&#34;_blank&#34;&gt;&lt;img src=&#34;http://img.youtube.com/vi/_7OVpWjr8lE/0.jpg&#34; 
-alt=&#34;IMAGE ALT TEXT HERE&#34; width=&#34;240&#34; height=&#34;180&#34; border=&#34;10&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
       <title>workflow</title>
-      <link>http://tom-dams.github.io/gip/workflow/</link>
+      <link>http://tom-dams.github.io/GIP/workflow/</link>
       <pubDate>Thu, 22 Oct 2015 20:26:38 +0200</pubDate>
       
-      <guid>http://tom-dams.github.io/gip/workflow/</guid>
+      <guid>http://tom-dams.github.io/GIP/workflow/</guid>
       <description>
 
 &lt;h2 id=&#34;vergelijking-tussen-de-workflow-van-wordpress-en-hugo:7b3ce5b849b571e162bc8896a9240e7b&#34;&gt;Vergelijking tussen de workflow van Wordpress en Hugo&lt;/h2&gt;
@@ -98,10 +252,10 @@ Ik ben niet van plan om het zelf nog te gebruiken maar als het echt moet voor ee
     
     <item>
       <title>Autobiografie</title>
-      <link>http://tom-dams.github.io/gip/Autobiografie/</link>
+      <link>http://tom-dams.github.io/GIP/Autobiografie/</link>
       <pubDate>Tue, 20 Oct 2015 16:08:39 +0200</pubDate>
       
-      <guid>http://tom-dams.github.io/gip/Autobiografie/</guid>
+      <guid>http://tom-dams.github.io/GIP/Autobiografie/</guid>
       <description>&lt;p&gt;My name is Tom Dams. I’m 16 years old and I live in Westmalle. I go to school in Oostmalle at the Immaculata Instituut.&lt;/p&gt;
 
 &lt;p&gt;My first experiences with IT were the IT lessons in primary school. The first time was when I was 6 years old. We would just go on sites where we could play games to train spelling, basic math and much more. I remember the first time we had IT lessons in primary school and I instantly fell in love with computers. I also had a computer at my home on which I would play games after school with my brother. The computer had Windows XP and we actually still have it in our living room but we don’t really use it anymore. I’d also go on YouTube to watch funny videos when I was bored but I didn’t really go on any other sites.&lt;/p&gt;
@@ -110,17 +264,17 @@ Ik ben niet van plan om het zelf nog te gebruiken maar als het echt moet voor ee
 
 &lt;p&gt;My future prospect with IT is that I’m going to study system and network management and hopefully will get a job in that sector, because that’s my ambition with IT. Programming is really fun too but I think system- and network management is way more fun than programming. I also think getting a job in the IT sector is quite fun since it’s not always the same thing since everything in IT changes pretty quick.
 So my life is pretty intertwined with my PC since I study IT. I have to work a lot on my PC for school, but I also go on my PC for my own enjoyment and to talk to my friends. IT has become quite a big and important part of my life and probably will become an even bigger part of my life if I get a job in the IT sector, but I enjoy it so that’s not a bad thing.
-&lt;img src=&#34;gip/Autobiography.jpg&#34; alt=&#34;&#34; /&gt;
+&lt;img src=&#34;GIP/Autobiography.jpg&#34; alt=&#34;&#34; /&gt;
 &lt;/p&gt;
 </description>
     </item>
     
     <item>
       <title></title>
-      <link>http://tom-dams.github.io/gip/single/</link>
+      <link>http://tom-dams.github.io/GIP/single/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://tom-dams.github.io/gip/single/</guid>
+      <guid>http://tom-dams.github.io/GIP/single/</guid>
       <description>partial &#34;header.html&#34; . }}
 
 &lt;div id=&#34;container&#34;&gt;

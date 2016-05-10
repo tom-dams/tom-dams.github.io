@@ -6,15 +6,59 @@
     <description>Recent content in Software on GIP Tom Dams</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 22 Oct 2015 20:26:38 +0200</lastBuildDate>
+    <lastBuildDate>Sun, 08 May 2016 16:45:21 +0200</lastBuildDate>
     <atom:link href="http://tom-dams.github.io/categories/software/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
+      <title>Database Mail</title>
+      <link>http://tom-dams.github.io/GIP/database/</link>
+      <pubDate>Sun, 08 May 2016 16:45:21 +0200</pubDate>
+      
+      <guid>http://tom-dams.github.io/GIP/database/</guid>
+      <description>&lt;pre&gt;&lt;code&gt;create schema gip_taak_08_DamsTom;
+use gip_taak_08_DamsTom;
+
+create table UserAccount(
+    id int not null auto_increment primary key,
+    wachtwoord text not null,
+    email text not null 
+);
+
+create table Mail(
+    id int not null auto_increment primary key,
+    user_id int not null,
+    tijdstip datetime,
+    titel text not null,
+    inhoud text not null,
+    bijlage text,
+    ontvanger text not null 
+);
+
+insert into UserAccount(id, wachtwoord, email)
+values
+(1, &amp;quot;Test123&amp;quot;, &amp;quot;test@gmail.com&amp;quot;),
+(2, &amp;quot;Test456&amp;quot;, &amp;quot;test2@gmail.com&amp;quot;);
+
+insert into Mail(mail_id, user_id, tijdstip, titel, inhoud, bijlage, ontvanger)
+values
+(1,1, SYSDATE(), &amp;quot;Titel&amp;quot;, &amp;quot;Dit is de inhoud&amp;quot;, &amp;quot;Bijlage&amp;quot;, &amp;quot;test2@gmail.com&amp;quot;),
+(2, 2, sysdate(), &amp;quot;Titel2&amp;quot;, &amp;quot;Hoi&amp;quot;, &amp;quot;&amp;quot;, &amp;quot;test@gmail.com&amp;quot;); 
+
+select * from UserAccount join Mail on UserAccount.id = Mail.user_id;
+
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;&lt;img src=&#34;GIP/DiagramMailGip.png&#34; alt=&#34;&#34; /&gt;
+&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
       <title>workflow</title>
-      <link>http://tom-dams.github.io/gip/workflow/</link>
+      <link>http://tom-dams.github.io/GIP/workflow/</link>
       <pubDate>Thu, 22 Oct 2015 20:26:38 +0200</pubDate>
       
-      <guid>http://tom-dams.github.io/gip/workflow/</guid>
+      <guid>http://tom-dams.github.io/GIP/workflow/</guid>
       <description>
 
 &lt;h2 id=&#34;vergelijking-tussen-de-workflow-van-wordpress-en-hugo:7b3ce5b849b571e162bc8896a9240e7b&#34;&gt;Vergelijking tussen de workflow van Wordpress en Hugo&lt;/h2&gt;

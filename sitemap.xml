@@ -3,8 +3,43 @@
   
   <url>
     <loc>http://tom-dams.github.io/</loc>
-    <lastmod>2015-12-06T21:45:03+01:00</lastmod>
+    <lastmod>2016-05-10T20:07:54+02:00</lastmod>
     <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://tom-dams.github.io/GIP/StageVerslagen/</loc>
+    <lastmod>2016-05-10T20:07:54+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://tom-dams.github.io/GIP/huisstijl/</loc>
+    <lastmod>2016-05-10T20:07:24+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://tom-dams.github.io/GIP/database/</loc>
+    <lastmod>2016-05-08T16:45:21+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://tom-dams.github.io/GIP/CaseStudyEngels/</loc>
+    <lastmod>2016-05-08T15:59:04+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://tom-dams.github.io/GIP/PhotosStage/</loc>
+    <lastmod>2016-05-08T15:45:22+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://tom-dams.github.io/GIP/Case_Study/</loc>
+    <lastmod>2016-05-08T14:12:42+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://tom-dams.github.io/GIP/InstructiefilmpjeNED/</loc>
+    <lastmod>2015-12-06T22:23:50+01:00</lastmod>
   </url>
   
   <url>
@@ -15,11 +50,6 @@
   <url>
     <loc>http://tom-dams.github.io/GIP/FAQ/</loc>
     <lastmod>2015-12-06T21:31:05+01:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://tom-dams.github.io/GIP/middagsessie/</loc>
-    <lastmod>2015-12-06T20:31:14+01:00</lastmod>
   </url>
   
   <url>
