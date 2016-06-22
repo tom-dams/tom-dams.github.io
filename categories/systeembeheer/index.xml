@@ -2,19 +2,63 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Systeembeheer on GIP Tom Dams</title>
-    <link>http://tom-dams.github.io/categories/systeembeheer/</link>
+    <link>http://localhost:1313/categories/systeembeheer/</link>
     <description>Recent content in Systeembeheer on GIP Tom Dams</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 08 May 2016 14:12:42 +0200</lastBuildDate>
-    <atom:link href="http://tom-dams.github.io/categories/systeembeheer/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 22 Jun 2016 23:48:14 +0200</lastBuildDate>
+    <atom:link href="http://localhost:1313/categories/systeembeheer/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Testopstelling</title>
+      <link>http://localhost:1313/GIP/testopstelling/</link>
+      <pubDate>Wed, 22 Jun 2016 23:48:14 +0200</pubDate>
+      
+      <guid>http://localhost:1313/GIP/testopstelling/</guid>
+      <description>
+
+&lt;h2 id=&#34;testopstelling-ms-sharepoint:c36ee4a195c72d275a44931f82064b64&#34;&gt;Testopstelling MS SharePoint&lt;/h2&gt;
+
+&lt;p&gt;MS SharePoint is een platform dat op een een server draait. Je kan hier bestanden op opslaan of delen. Het is beter voor bedrijven dan Google Drive, in die zin dat het op je eigen server draait en dat je niet afhankelijk bent van Google. Aangezien alles gebeurt via het lokale netwerk van het bedrijf heb je geen internetverbinding nodig. Er wordt gebruik gemaakt van bibliotheken om de verschillende bestanden te sorteren.&lt;/p&gt;
+
+&lt;p&gt;Bedrijven en scholen gebruiken SharePoint voor het maken van websites. SharePoint is een veilige locatie voor het opslaan, organiseren, delen en gebruiken van informatie vanaf elk apparaat. Je hebt alleen een webbrowser nodig, zoals Internet Explorer, Chrome of Firefox. Dit wil dus zeggen dat iedereen thuis en op school in dezelfde mappenstructuur kan werken. Ook is er op MS SharePoint functionaliteit voor agenda’s fora en enquêtes.&lt;/p&gt;
+
+&lt;h1 id=&#34;voordelen-hiervan-zijn:c36ee4a195c72d275a44931f82064b64&#34;&gt;Voordelen hiervan zijn:&lt;/h1&gt;
+
+&lt;p&gt;Omdat MS SharePoint online versies bezit van Word, Excel, Powerpoint en andere programma’s (Office 365) kan je online je bestanden hierop maken en opslagen. Hierdoor moet je geen bestanden meer uploaden en downloaden via google Drive of Smartschool.&lt;/p&gt;
+
+&lt;p&gt;Het is beschikbaar op de meeste apparaten zoals tablets, smartphones, computers dus de leerlingen kunnen overal hiervan gebruik maken door op de Sharepoint website van de school in te loggen.&lt;/p&gt;
+
+&lt;p&gt;Doordat SharePoint erg gestructureerd is, is er een enorme tijdwinst bij het opzoeken van informatie.&lt;/p&gt;
+
+&lt;p&gt;Op het stagebedrijf van Bert werd SharePoint ook gebruikt om mails rond te sturen. Dit was vooral handig om ervoor te zorgen dat iedereen dezelfde templates voor hun mail gebruikte (iedereen gebruikt dezelfde online handtekening).&lt;/p&gt;
+
+&lt;p&gt;Bij SharePoint 2007 en SharePoint 2010 was het moeilijk om een website op te stellen. Maar bij SharePoint 2013 is veel moderner en de sites werken goed op kleinere schermen van tablets en smartphones.&lt;/p&gt;
+
+&lt;p&gt;SharePoint kan ook gebruikt voor het voeren van versiebeheer, één van de belangrijkste voordelen hiervan is dat je altijd kan terugvallen op een vorige versie wanneer er een fout in een bestand zit.&lt;/p&gt;
+
+&lt;p&gt;Het is heel eenvoudig om samen aan projecten te werken met partnerbedrijven, ook de communicatie hierbij verloopt vlot dankzij SharePoint.&lt;/p&gt;
+
+&lt;h1 id=&#34;nadelen-hiervan-zijn:c36ee4a195c72d275a44931f82064b64&#34;&gt;Nadelen hiervan zijn:&lt;/h1&gt;
+
+&lt;p&gt;Sharepoint zou dus Smartschool en Google Drive kunnen vervangen maar beide applicaties zijn beter in wat ze doen. Op onze Google accounts hebben wij bijvoorbeeld ongelimiteerde opslagruimte op Google Drive. Op Smartschool is er ook al gespecialiseerde functionaliteit voorzien voor schoolactiviteiten zoals de rapporten of de kalender/agenda.&lt;/p&gt;
+
+&lt;p&gt;SharePoint is best moeilijk op te zetten en draaiende te houden. Bert heeft tijdens zijn stage contact gemaakt met SharePoint en vond het redelijk overweldigend want er waren zoveel opties beschikbaar. Zijn stagementor zei ook dat het niet makkelijk te onderhouden is omdat om SharePoint heel ingewikkeld is en het vergt veel tijd om het goed voor je bedrijf te laten functioneren.&lt;/p&gt;
+
+&lt;p&gt;SharePoint is ook niet de goedkoopste tool ter wereld. De kosten voor het programma zelf zijn best nog wel goedkoop maar je moet ook nog allerlei andere voorzieningen aanschaffen. Je moet bijvoorbeeld per user 4,20 euro per maand betalen en mogelijk is het nodig nog extra hardware aan te schaffen.&lt;/p&gt;
+
+&lt;p&gt;Op SharePoint staan veel klant- en personeelsgegevens, financiële gegevens, productinformatie en patenten. Het is een groot risico dat deze in de verkeerde handen komen als werknemers niet goed omgaan met de vertrouwelijke gegevens of als de server wordt gehackt. De informatie kan afgeschermd worden met SharePoint maar de risico’s kunnen niet onderschat worden.&lt;/p&gt;
+
+&lt;p&gt;Aangezien SharePoint een platform is van Microsoft, trekt het de software van Microsoft ook wel voor. Word, Powerpoint en dergelijken werken dus heel goed met SharePoint. Maar als je een iets onbekender programma gebruikt, merk je wel eens dat SharePoint hier niet zo goed mee samenwerkt.&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>Case Study</title>
-      <link>http://tom-dams.github.io/GIP/Case_Study/</link>
+      <link>http://localhost:1313/GIP/Case_Study/</link>
       <pubDate>Sun, 08 May 2016 14:12:42 +0200</pubDate>
       
-      <guid>http://tom-dams.github.io/GIP/Case_Study/</guid>
+      <guid>http://localhost:1313/GIP/Case_Study/</guid>
       <description>&lt;p&gt;Mijn onderwerp voor de case study was System Center Configuration Manager.
 Het is een redelijk bekend product en het wordt in veel ondernemingen gebruikt en bijvoorbeeld ook in onze school.&lt;/p&gt;
 
